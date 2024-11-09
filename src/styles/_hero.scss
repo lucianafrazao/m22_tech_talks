@@ -5,11 +5,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
+    
     .container {
         position: relative;
     }
-
+    
     &::before {
         position: absolute;
         top: 0;
@@ -20,14 +20,13 @@
         content: '';
         opacity: .7;
     }
-
+    
     &__text {
         margin-top: 64px;
         margin-bottom: 64px;
         font-weight: 800;
         font-size: 40px;
         line-height: 56px;
-        color: #fff;
         text-align: center;
     }
 
@@ -45,9 +44,15 @@
         }
 
         &__text {
-            font-size: 22px;
-            line-height: 24px;
+            font-size: 18px;
+            line-height: 32px;
             margin: 24px 0;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__text {
+            font-size: 32px;
         }
     }
 }
